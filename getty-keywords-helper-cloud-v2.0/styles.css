@@ -1,0 +1,139 @@
+.getty-ai-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.4);
+}
+
+.getty-ai-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.5);
+}
+
+.getty-ai-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.getty-ai-btn.success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.getty-ai-btn.error {
+  background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+}
+
+.getty-ai-interrupt-btn {
+  background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+  padding: 8px 12px;
+}
+
+.getty-ai-interrupt-btn:hover {
+  background: linear-gradient(135deg, #d62839 0%, #e04b3d 100%);
+}
+
+.getty-ai-container {
+  vertical-align: middle;
+}
+
+/* Modal */
+.getty-ai-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  animation: getty-fade-in 0.2s ease;
+}
+
+@keyframes getty-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.getty-ai-modal-box {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  min-width: 280px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: getty-slide-up 0.3s ease;
+}
+
+@keyframes getty-slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.getty-ai-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.getty-ai-modal-icon {
+  font-size: 24px;
+}
+
+.getty-ai-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.getty-ai-modal-message {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.getty-ai-modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.getty-ai-modal-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.getty-ai-modal-btn.ok {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.getty-ai-modal-btn.ok:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.getty-ai-modal-btn.cancel {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.getty-ai-modal-btn.cancel:hover {
+  background: #d1d5db;
+}

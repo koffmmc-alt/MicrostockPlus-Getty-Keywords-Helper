@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "M+ Getty Keywords Helper",
+  "version": "2.0.0",
+  "description": "AI-powered keyword refinements for Getty Images via Microstock Plus",
+  
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  
+  "host_permissions": [
+    "https://*.workers.dev/*",
+    "https://*.microstock.plus/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Getty Keywords Helper"
+  },
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://*.microstock.plus/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
