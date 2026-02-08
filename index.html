@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M+ Getty Keywords Helper - AI для уточнений Getty Images</title>
+  <meta name="description" content="Автоматическое уточнение ключевых слов для Getty Images с помощью AI">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon128.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="icon128.png" alt="Getty Keywords Helper" width="40" height="40" style="border-radius: 8px;">
+        <span>M+ Getty Keywords Helper</span>
+      </div>
+      <a href="https://t.me/olegmankoff" class="contact-btn" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.654-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+        </svg>
+        Telegram
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>AI-помощник для уточнений<br>ключевых слов Getty Images</h1>
+      <p class="subtitle">Автоматически выбирает правильные значения терминов в Microstock Plus, экономя часы ручной работы</p>
+      
+      <a href="https://drive.google.com/uc?export=download&id=1A81_iuzzAMbJ_clSWdPlxrEwDai4cO_g" class="btn btn-primary btn-hero">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+        </svg>
+        Скачать расширение бесплатно
+      </a>
+      
+      <div class="hero-key">
+        Ключ доступа: <code>MPLUS-TEST-123</code>
+      </div>
+
+      <div class="hero-faq">
+        <div class="hero-faq-item">
+          <span class="hero-faq-q">Для кого?</span>
+          <span class="hero-faq-a">Для пользователей Microstock.plus</span>
+        </div>
+        <span class="hero-faq-divider">•</span>
+        <div class="hero-faq-item">
+          <span class="hero-faq-q">Это бесплатно?</span>
+          <span class="hero-faq-a">Да</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="screenshots">
+    <div class="container">
+      <div class="screenshot-grid">
+        <div class="screenshot-card">
+          <img src="screenshot1.png" alt="AI автоматически выбирает нужные уточнения" class="screenshot-img" onclick="openLightbox(this.src)">
+          <h3>Один клик — все готово</h3>
+          <p>AI анализирует контент и автоматически отмечает правильные значения терминов</p>
+        </div>
+        
+        <div class="screenshot-card">
+          <img src="screenshot2.png" alt="Кнопка AI Уточнения для пакетной обработки" class="screenshot-img" onclick="openLightbox(this.src)">
+          <h3>Пакетная обработка</h3>
+          <p>Выберите файлы, нажмите "AI Уточнения" — расширение обработает все автоматически</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <!-- Features -->
+  <section class="features" id="how-it-works">
+    <div class="container">
+      <h2>Как это работает</h2>
+      
+      <div class="video-container">
+        <iframe 
+          src="https://drive.google.com/file/d/1v1oUvJmcHUS3aA6ghQR8DCvyfepCI8zC/preview" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="diagram-container">
+        <img src="diagram.svg" alt="Схема работы расширения" class="diagram-img">
+      </div>
+      
+      <div class="faq-section">
+        <div class="faq-card">
+          <div class="faq-q">Почему это бесплатно?</div>
+          <div class="faq-a">Это мой тестовый первый проект, которым я решил поделиться с сообществом. Единственные затраты здесь — DeepSeek AI, но запросы стоят очень дёшево, поэтому не ставлю целей монетизировать расширение.</div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-q">Это безопасно?</div>
+          <div class="faq-a">Да, скрипт абсолютно безопасен, не сохраняет и не анализирует фотографии пользователя. Выполняется на 90% в браузере пользователя. Остальные 10% — нейросеть с текстовым анализом.</div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-q">Как конкретно здесь используется AI?</div>
+          <div class="faq-a">Нейросеть анализирует только текст: заголовок, описание и ключевые слова. На основе контекста выбирает подходящие уточнения и игнорирует явно нерелевантные.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section class="installation" id="download">
+    <div class="container">
+      <h2>Установка</h2>
+      
+      <div class="install-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Скачайте расширение</h3>
+            <p>Нажмите кнопку ниже и сохраните ZIP-архив</p>
+            <a href="https://drive.google.com/uc?export=download&id=1A81_iuzzAMbJ_clSWdPlxrEwDai4cO_g" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              Скачать getty-keywords-helper.zip
+            </a>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Распакуйте архив</h3>
+            <p>Извлеките все файлы в отдельную папку на компьютере</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Откройте Chrome Extensions</h3>
+            <p>Перейдите по адресу <code>chrome://extensions</code> или через меню → Расширения → Управление расширениями</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Включите режим разработчика</h3>
+            <p>Активируйте переключатель "Режим разработчика" в правом верхнем углу</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Загрузите расширение</h3>
+            <p>Нажмите "Загрузить распакованное расширение" и выберите папку с файлами</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>Настройте ключ доступа</h3>
+            <p>Кликните на иконку расширения и введите ключ: <code class="highlight">MPLUS-TEST-123</code></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="install-help">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <p>Обратная связь? Напишите в <a href="https://t.me/olegmankoff" target="_blank">Telegram</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 M+ Getty Keywords Helper. Unofficial tool for Microstock Plus users.</p>
+      <p>Not affiliated with Getty Images or Microstock Plus.</p>
+    </div>
+  </footer>
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
