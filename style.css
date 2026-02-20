@@ -563,6 +563,30 @@ body {
   font-size: 16px;
 }
 
+.install-warning {
+  margin-top: 32px;
+  padding: 16px 20px;
+  background: rgba(251, 191, 36, 0.08);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.install-warning svg {
+  flex-shrink: 0;
+  color: #FBBF24;
+  margin-top: 0;
+}
+
+.install-warning p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .install-help {
   margin-top: 60px;
   padding: 24px;
@@ -716,6 +740,85 @@ body {
     flex-direction: column;
     gap: 16px;
   }
+}
+
+/* Browser links */
+.browser-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.browser-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.browser-link:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.browser-link.active {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.ext-url-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.ext-url-bar code {
+  flex: 1;
+  font-size: 14px;
+  color: var(--primary);
+  user-select: all;
+}
+
+.ext-url-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.ext-url-copy:hover {
+  background: var(--primary-hover, #818cf8);
+}
+
+.browser-hint {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 4px;
 }
 
 /* Smooth scroll */
