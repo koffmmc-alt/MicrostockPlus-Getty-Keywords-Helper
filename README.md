@@ -4,4 +4,6 @@ Automatically selects the correct term meanings in Microstock Plus, saving hours
 
 Download chrome extension here: 
 
-https://gettykeywordshelper.ru/
+Chrome web store: https://chromewebstore.google.com/detail/ifdbmaidiadainbpcllafohfkcjgaidp?utm_source=item-share-cb
+
+Offical website: https://gettykeywordshelper.ru/
